@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const rawInput = prompt('태어난 해를 입력해주세요.', '');
+    const year = Number(rawInput);
+    const e =year % 12;
+
+    let resulst
+    
+    if (e === 0) { resulst = '원숭이'}
+    else if (e === 1) {resulst = '닭'}
+    else if (e === 2) {resulst = '개'}
+    else if (e === 3) {resulst = '돼지'}
+    else if (e === 4) {resulst = '쥐'}
+    else if (e === 5) {resulst = '소'}
+    else if (e === 6) {resulst = '호랑이'}
+    else if (e === 7) {resulst = '토끼'}
+    else if (e === 8) {resulst = '용'}
+    else if (e === 9) {resulst = '뱀'}
+    else if (e === 10) {resulst = '말'}
+    else if (e === 11) {resulst = '양'}
+    alert(`${year}년에 태어났다면 ${resulst} 띠입니다.`)
+    alert(year + '년에 태어났다면' + resulst + '띠입니다.')
+  </script>
+</body>
+</html>
