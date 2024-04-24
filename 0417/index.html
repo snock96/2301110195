@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//for문 - 특정 횟수 만큼 반복하고 싶을때 사용하는 범용적인 반복문, 변수를 let 로 지정함. //
+
+      //for in 반복문(인덱스를 반복)
+    const todos = ['우유구매', '업무메일확인', '필라테스'];
+
+    for (const i in todos) {
+      console.log(i);
+      console.log(todos[i]);
+      console.log(`${i}번째 할 일:${todos[i]}`);
+    }
+
+    const todos2 = ['우유구매', '업무메일확인', '필라테스'];
+      //for of 반복분 (요소의 값을 반복)
+    for (const todo of todos2) { //요소의 값을 반복할때 안정적으로 사용, for of문 , for in 문과는 다르게 반복변수에 요소의 값이 들어감//
+      console.log(`오늘의 할 일: ${todo}`)
+    }
+    //for반복문
+    for(let i =0; i < 5; i++){
+      console.log(`${i}번째 반복입니다`);
+    }
+
+    //1부터 n까지 더하기
+    let output = 0;
+    for (let i = 1; i <= 100; i++) {
+      output += i;
+    }
+    console.log(`1~100까지 더하면 ${output}입니다.`)
+
+    for (let i =0; i < todos.length; i++) {
+      console.log(`${i}번째 할일: ${todos[i]}`);
+    }
+
+    for (let i = todos.length; i >= 0; i--) {
+      console.log(`${i}번째 할 일: ${todos[i]}`)
+    }
+      //while을 통한 반복문
+      let = i =0;
+    while(true) {
+      alert(`${i}번째 반복입니다.`);
+      i = i + 1
+    }
+
+    //break 를 키워드를 통한 반복문 종료
+    for (let i = 0; true; i++) {
+      alert(i+'번째 반복문입니다.')
+
+      //진행여부확인
+      const isContiune = confirm('계속하시겠습니까?');
+      if (!isContiune) {
+        break;
+      }
+      
+      alert('프로그램종료')
+    }
+
+    //변수선언, 아웃풋은 중복변수 지정 안됨
+    let output2 = 0
+    //반복문
+    for (let i = 1; i <= 10; i++) {
+    //조건문
+    if(i%2 === 1){
+    //홀수면 현재 반복을 중지하고 다음 반복을 수행
+    continue
+    }
+
+    output2 += i;
+
+    alert(output)
+    }
+  </script>
+</body>
+</html>
