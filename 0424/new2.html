@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+let height = 7; // 피라미드의 높이
+let message2 = '';
+
+for (let i = 1; i <= height; i++) {
+  // 공백 출력
+  for (let j = 1; j <= height - i; j++) {
+    message2 += ' ';
+  }
+  
+  // 별 출력
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    message2 += '*';
+  }
+  
+  message2 += '\n'; // 줄바꿈
+}
+
+
+
+// let height = 5; // 다이아몬드의 높이
+let message = '';
+
+for (let i = 1; i <= height; i++) {
+  // 공백 출력
+  for (let j = 1; j <= height - i; j++) {
+    message += ' ';
+  }
+  
+  // 별 출력
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    message += '*';
+  }
+  
+  message += '\n'; // 줄바꿈
+}
+
+for (let i = height - 1; i >= 1; i--) {
+  // 공백 출력
+  for (let j = 1; j <= height - i; j++) {
+    message += ' ';
+  }
+  
+  // 별 출력
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    message += '*';
+  }
+  
+  message += '\n'; // 줄바꿈
+}
+
+alert(message2);
+alert(message);
+  </script>
+</body>
+</html>
